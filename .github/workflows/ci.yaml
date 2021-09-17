@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  schedule:
+    - cron: "0 0,12 * * *"
+  workflow_dispatch:
+
+jobs:
+  master:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          curl https://api.github.com/repos/jetstack/cert-manager/releases | \
+          jq "map(select(.draft == false)) | map({tag_name: .tag_name, prerelease: .prerelease, assests: (.assets | map({name: .name, url: .url}))})" \
+          > releases.json
+      - name: create directories
+        run: |
+          mkdir $(cat releases.json | jq -r ".[] | .tag_name")
+      - name: download files
+        run: |
+          cat releases.json | jq -r ".[] | {asset: (.assests | map(select(.name | endswith(\".yaml\"))) | .[]), tag_name: .tag_name} | \"wget -O \" + .tag_name + \"/\" + .asset.name + \" \" + \"https://github.com/jetstack/cert-manager/releases/download/\" + .tag_name + \"/\" + .asset.name" | sh
+      - name: create nocrds files
+        run: |
+          cat releases.json | jq -r ".[] | {asset: (.assests | map(select(.name | endswith(\".yaml\") and (contains(\"crds\") | not))) | .[]), tag_name: .tag_name} | \"sed -n -e '/^#/p' \" + .tag_name + \"/\" + .asset.name +                                                                           \" > \" + .tag_name + \"/\" + (.asset.name | sub(\".yaml\"; \"-nocrds.yaml\"))" | sh
+          cat releases.json | jq -r ".[] | {asset: (.assests | map(select(.name | endswith(\".yaml\") and (contains(\"crds\") | not))) | .[]), tag_name: .tag_name} | \"cat \"               + .tag_name + \"/\" + .asset.name + \" | docker run --rm -i fischerscode/kfilt -x kind=CustomResourceDefinition >> \" + .tag_name + \"/\" + (.asset.name | sub(\".yaml\"; \"-nocrds.yaml\"))" | sh
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ci-update-manifests
+          commit-message: Regenerate manifests
+          title: Regenerate manifests
+          body: |
+            Some changes occured while regenerating the manifests. Please check the result.
+          assignees: fischerscode
+          reviewers: fischerscode
+          delete-branch: true
