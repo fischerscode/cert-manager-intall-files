@@ -32,7 +32,7 @@ jobs:
           commit-message: Regenerate manifests
           title: Regenerate manifests
           body: |
-            Some changes occured while regenerating the manifests. Please check the result.
+            Some changes occurred while regenerating the manifests. Please check the result.
           assignees: fischerscode
           reviewers: fischerscode
           delete-branch: true
