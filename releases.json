@@ -1,5 +1,91 @@
 [
   {
+    "tag_name": "v1.8.0",
+    "prerelease": false,
+    "assests": [
+      {
+        "name": "cert-manager.crds.yaml",
+        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/61641424"
+      },
+      {
+        "name": "cert-manager.yaml",
+        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/61641426"
+      },
+      {
+        "name": "cmctl-darwin-amd64.tar.gz",
+        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/61641472"
+      },
+      {
+        "name": "cmctl-darwin-arm64.tar.gz",
+        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/61641454"
+      },
+      {
+        "name": "cmctl-linux-amd64.tar.gz",
+        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/61641431"
+      },
+      {
+        "name": "cmctl-linux-arm.tar.gz",
+        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/61641451"
+      },
+      {
+        "name": "cmctl-linux-arm64.tar.gz",
+        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/61641464"
+      },
+      {
+        "name": "cmctl-linux-ppc64le.tar.gz",
+        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/61641449"
+      },
+      {
+        "name": "cmctl-linux-s390x.tar.gz",
+        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/61641462"
+      },
+      {
+        "name": "cmctl-windows-amd64.tar.gz",
+        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/61641481"
+      },
+      {
+        "name": "cmctl-windows-amd64.zip",
+        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/61641478"
+      },
+      {
+        "name": "kubectl-cert_manager-darwin-amd64.tar.gz",
+        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/61641446"
+      },
+      {
+        "name": "kubectl-cert_manager-darwin-arm64.tar.gz",
+        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/61641483"
+      },
+      {
+        "name": "kubectl-cert_manager-linux-amd64.tar.gz",
+        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/61641474"
+      },
+      {
+        "name": "kubectl-cert_manager-linux-arm.tar.gz",
+        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/61641460"
+      },
+      {
+        "name": "kubectl-cert_manager-linux-arm64.tar.gz",
+        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/61641427"
+      },
+      {
+        "name": "kubectl-cert_manager-linux-ppc64le.tar.gz",
+        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/61641436"
+      },
+      {
+        "name": "kubectl-cert_manager-linux-s390x.tar.gz",
+        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/61641457"
+      },
+      {
+        "name": "kubectl-cert_manager-windows-amd64.tar.gz",
+        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/61641476"
+      },
+      {
+        "name": "kubectl-cert_manager-windows-amd64.zip",
+        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/61641439"
+      }
+    ]
+  },
+  {
     "tag_name": "v1.8.0-beta.0",
     "prerelease": true,
     "assests": [
@@ -1826,52 +1912,6 @@
       {
         "name": "kubectl-cert_manager-windows-amd64.tar.gz",
         "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/41750971"
-      }
-    ]
-  },
-  {
-    "tag_name": "v1.4.2",
-    "prerelease": false,
-    "assests": [
-      {
-        "name": "cert-manager.crds.yaml",
-        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/41568584"
-      },
-      {
-        "name": "cert-manager.yaml",
-        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/41568583"
-      },
-      {
-        "name": "kubectl-cert_manager-darwin-amd64.tar.gz",
-        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/41568592"
-      },
-      {
-        "name": "kubectl-cert_manager-darwin-arm64.tar.gz",
-        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/41568593"
-      },
-      {
-        "name": "kubectl-cert_manager-linux-amd64.tar.gz",
-        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/41568598"
-      },
-      {
-        "name": "kubectl-cert_manager-linux-arm.tar.gz",
-        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/41568585"
-      },
-      {
-        "name": "kubectl-cert_manager-linux-arm64.tar.gz",
-        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/41568587"
-      },
-      {
-        "name": "kubectl-cert_manager-linux-ppc64le.tar.gz",
-        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/41568588"
-      },
-      {
-        "name": "kubectl-cert_manager-linux-s390x.tar.gz",
-        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/41568589"
-      },
-      {
-        "name": "kubectl-cert_manager-windows-amd64.tar.gz",
-        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/41568597"
       }
     ]
   }
