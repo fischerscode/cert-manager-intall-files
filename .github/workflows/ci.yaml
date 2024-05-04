@@ -9,7 +9,7 @@ jobs:
   regenerate-files:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - run: |
           curl -L https://api.github.com/repos/jetstack/cert-manager/releases | \
           jq "map(select(.draft == false)) | map({tag_name: .tag_name, prerelease: .prerelease, assests: (.assets | map({name: .name, url: .url}))})" \
