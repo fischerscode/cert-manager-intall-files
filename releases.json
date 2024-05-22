@@ -1,5 +1,19 @@
 [
   {
+    "tag_name": "v1.15.0-beta.1",
+    "prerelease": true,
+    "assests": [
+      {
+        "name": "cert-manager.crds.yaml",
+        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/169207885"
+      },
+      {
+        "name": "cert-manager.yaml",
+        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/169207886"
+      }
+    ]
+  },
+  {
     "tag_name": "v1.14.5",
     "prerelease": false,
     "assests": [
@@ -2418,92 +2432,6 @@
       {
         "name": "kubectl-cert_manager-windows-amd64.zip",
         "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/113521987"
-      }
-    ]
-  },
-  {
-    "tag_name": "v1.12.2",
-    "prerelease": false,
-    "assests": [
-      {
-        "name": "cert-manager.crds.yaml",
-        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/113057581"
-      },
-      {
-        "name": "cert-manager.yaml",
-        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/113057583"
-      },
-      {
-        "name": "cmctl-darwin-amd64.tar.gz",
-        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/113057632"
-      },
-      {
-        "name": "cmctl-darwin-arm64.tar.gz",
-        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/113057612"
-      },
-      {
-        "name": "cmctl-linux-amd64.tar.gz",
-        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/113057617"
-      },
-      {
-        "name": "cmctl-linux-arm.tar.gz",
-        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/113057602"
-      },
-      {
-        "name": "cmctl-linux-arm64.tar.gz",
-        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/113057588"
-      },
-      {
-        "name": "cmctl-linux-ppc64le.tar.gz",
-        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/113057593"
-      },
-      {
-        "name": "cmctl-linux-s390x.tar.gz",
-        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/113057600"
-      },
-      {
-        "name": "cmctl-windows-amd64.tar.gz",
-        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/113057586"
-      },
-      {
-        "name": "cmctl-windows-amd64.zip",
-        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/113057619"
-      },
-      {
-        "name": "kubectl-cert_manager-darwin-amd64.tar.gz",
-        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/113057629"
-      },
-      {
-        "name": "kubectl-cert_manager-darwin-arm64.tar.gz",
-        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/113057621"
-      },
-      {
-        "name": "kubectl-cert_manager-linux-amd64.tar.gz",
-        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/113057630"
-      },
-      {
-        "name": "kubectl-cert_manager-linux-arm.tar.gz",
-        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/113057624"
-      },
-      {
-        "name": "kubectl-cert_manager-linux-arm64.tar.gz",
-        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/113057605"
-      },
-      {
-        "name": "kubectl-cert_manager-linux-ppc64le.tar.gz",
-        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/113057608"
-      },
-      {
-        "name": "kubectl-cert_manager-linux-s390x.tar.gz",
-        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/113057626"
-      },
-      {
-        "name": "kubectl-cert_manager-windows-amd64.tar.gz",
-        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/113057614"
-      },
-      {
-        "name": "kubectl-cert_manager-windows-amd64.zip",
-        "url": "https://api.github.com/repos/cert-manager/cert-manager/releases/assets/113057616"
       }
     ]
   }
